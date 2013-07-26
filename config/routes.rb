@@ -55,8 +55,7 @@ Chef::Application.routes.draw do
   resources :helps
   resources :how_it_works
   resources :teams       
-  resources :products
-          
+  resources :abouts
     
   root :to => 'homes#index'
 
