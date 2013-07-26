@@ -48,7 +48,17 @@ Chef::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-   root :to => 'homes#index'
+  resources :advertisers
+  resources :careers
+  resources :contacts
+  resources :developers
+  resources :helps
+  resources :how_it_works
+  resources :teams       
+  resources :products
+          
+    
+  root :to => 'homes#index'
 
   # See how all your routes lay out with "rake routes"
 
